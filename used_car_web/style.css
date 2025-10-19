@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100dvh;
+    background-image: url('./assets/4k-silver-car-next-to-building-1gd91djt8etqznsa.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 45%;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+#start,
+#submit, #new_prediction{
+    padding: 0.5em;
+    margin: 0.8em 0;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#start:hover, #submit:hover, #new_prediction:hover{
+    background-color: #0056b3;
+}
+.hidden{
+    display: none;
+}
+.collect_data{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none; /* Initially hidden */
+}
+
+.collect_data form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.form-group{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+input, select{
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
